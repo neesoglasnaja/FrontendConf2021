@@ -23,21 +23,22 @@ html(lang='ru')
       h2.label(style="margin-top: 50px; font-size: 3.2em;") Тебе не нужен Bootstrap!
       p.next(style="font-size: 2em; color: white; padding-left: 10px") Или нужен?
         span.next  Или всё же не нужен?
-      img(src="pictures/iwd-logotype.webp" style="position:absolute; bottom: 60px; left: 60px; width: 250px; min-width: auto; min-height: auto;")
-      p(style="margin-top: 95px; color: white; width: 50%; margin-left: 50%; font-size: 32px; line-height: 1") Александра Шинкевич
+      //- img(src="pictures/iwd-logotype.webp" style="position:absolute; bottom: 60px; left: 60px; width: 250px; min-width: auto; min-height: auto;")
+      p(style="margin-top: 95px; color: white; width: 50%; margin-left: 50%; font-size: 32px; line-height: 1; text-align: right;") Саша Шинкевич
         br
         a(href='https://twitter.com/neesoglasnaja' target="_blank" style="color: white; font-size: 20px") @neesoglasnaja
-      +cover('pictures/cover.jpg')
+      //- +cover('pictures/cover.jpg')
     +slide({header: "", classes: ""})
-      div(style="margin-left: 50%; width: 60%; margin-top: 0px")
+      div(style="margin-left: 45%; width: 60%; margin-top: 0px")
         h2.label Кто я?
-        ul
-          li Верстала ещё на таблицах
-          li Была начальником отдела фронтенда
-          li Выгорела и уволилась (дважды)
-          li Счастливая безработная
-            +cover('pictures/me.jpg')
-        p(style="margin-top: 100px; display: flex; align-items: center")
+        ul(style="font-size: 0.95em;")
+          li Начинала верстать на таблицах 15 лет назад
+          li.next Google Developer Expert в Web Technologies
+          li.next WomenTechmakers Ambassador
+          li.next(style="text-decoration: line-through") Счастливая безработная
+          li.next Engineering Manager в Bravado
+        +cover('pictures/me.jpg')
+        p(style="margin-top: 50px; display: flex; align-items: center")
           img.logo(src="pictures/minskcss.png")
           img.logo(src="pictures/minskjs.png", style="width: 75px; padding-left: 0; padding-right: 0;")
           img.logo(src="pictures/css-minsk-js.svg", style="background-color: #2b2727; height: 65px; width: 70px")
@@ -126,6 +127,8 @@ html(lang='ru')
       +cover('pictures/important.jpg')
       div.next
         img.cover(src='pictures/important2.png', style="width: 95%; border: 3px solid red")
+      div.next
+        img.cover(src='pictures/important3.png', style="width: 95%; border: 3px solid red")
     +slide({header: "", classes: "no-page"})
       +cover('pictures/ploho.jpg')
     +slide({header: "", classes: "shout"})
@@ -506,7 +509,7 @@ html(lang='ru')
         li.next Не переставай учиться
     +slide({name: 'theend', header: "", classes: ''})
       p.end-link(style="position: absolute; bottom: 5%; color: #fff")
-        a.bigger(href="http://bit.ly/IWD-bootstrap" target="_blank" style="color:white") bit.ly/IWD-bootstrap
+        a.bigger(href="http://bit.ly/FC-bootstrap" target="_blank" style="color:white") bit.ly/FC-bootstrap
         br
         | Александра Шинкевич (
         a(href='https://twitter.com/neesoglasnaja' target="_blank" style="color: white") @neesoglasnaja
